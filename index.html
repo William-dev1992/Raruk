@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/sitting.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Raruk</title>
+</head>
+<body>
+  <div id="container">
+    <div class="clouds">
+      <img src="./assets/clouds.png" alt="clouds">
+      <img src="./assets/clouds.png" alt="clouds">
+    </div>
+    <div class="stats">
+      <div class="stat-cont">
+        <div name="fome" class="fome">
+          <div style="width: 50%;"></div>
+        </div>
+        <label for="fome">Fome</label>
+      </div>
+
+      <div class="stat-cont">
+        <div name="estresse" class="estresse">
+          <div style="width: 60%;"></div>
+        </div>
+        <label for="estresse">Estresse</label>
+      </div>
+
+      <div class="stat-cont">
+        <div name="felicidade" class="felicidade">
+          <div style="width: 20%;"></div>
+        </div>
+        <label for="felicidade">Felicidade</label>
+      </div>
+    </div>
+    <div class="dog">
+      <img src="./assets/bowl.png" alt="Tigela" width="150">
+      <div>
+        <label for="raruk">Raruk</label>
+        <img name="raruk" src="./assets/sitting.png" alt="Cachorrinho">
+        <img name="raruk" class="out ground" src="./assets/running.gif" alt="Cachorrinho">
+      </div>
+      <img src="./assets/go-out.png" alt="Coleira" width="150">
+    </div>
+    <div class="actions">
+      <button onclick="dog.Feed(20)">Alimentar</button>
+      <button onclick="dog.Pet(15)">Carinho</button>
+      <button onclick="dog.Out(20)">Passear</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <p>Eai :D! Esse é Raruk, um joguinho de cuidar do seu amiguinho, o Raruk, ele é um filhote que precisa de amor e carinho, imagino que possa ajudar ele com isso ;)</p>
+
+      <br>
+
+      <p>Seu objetivo aqui é diminuir a fome e o estresse de Raruk e aumentar sua felicidade, nada muito complexo. É tudo bem intuitivo, então você vai entender o que tem que fazer. Aproveite :)</p>
+
+      <button onclick="start.Init()">Começar</button>
+    </div>
+  </div>
+</body>
+</html>
